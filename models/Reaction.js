@@ -1,7 +1,7 @@
-const { Schema, Types } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+const { Schema, model, Types } = require('mongoose');
+const moment = require('moment');
 
-// reaction schema tied to thought
+
 const reactionSchema = new Schema(
     {
         reactionId: {
