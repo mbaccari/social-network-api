@@ -56,7 +56,7 @@ const userController = {
                 ? res.status(404).json({
                     message: 'no user found'
                 })
-                : res.json({ message: 'user deleted'})
+                : res.json({ message: 'user edited'})
         })
         .catch(err => {
             console.log(err)
